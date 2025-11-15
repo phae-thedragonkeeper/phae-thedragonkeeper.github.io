@@ -1,0 +1,72 @@
+
+/* Content ---------------------------------------- */
+.content_wrap {
+  margin: 10px;
+  display: block;
+}
+
+/* Bento grid? https://www.makeitgrid.com/ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+}
+.item-0 {
+  grid-column: 1;
+  grid-row: 4 ;
+}
+.item-1 {
+  grid-column: 1;
+  grid-row: 1 / span 3  ;
+}
+
+/* post listing styles */
+
+
+
+
+/* Media response  ---------------------------------------- */
+.mobile-only {
+  display: none;
+}
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 10in) {
+    .mobile-only {
+      display: block;
+    }
+    .desktop-only {
+      display: none;
+    }
+    html {
+        font-size: small;
+    }
+
+    header {
+      width: 97%;
+    }
+
+    header .banner_text  {
+      font-size: medium;
+    }
+    .navbar {
+      padding: 5px;
+      width: 95%;
+    }
+    .content_wrap {
+      padding: 5px;
+    }
+    footer {
+      font-size: smaller ;
+    }
+
+    /* for handling bento box display */
+
+
+    
+    
+}
+

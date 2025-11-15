@@ -1,0 +1,156 @@
+/* Header ---------------------------------------- */
+header {
+    padding: 0px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+    width: 33%;
+
+}
+
+header .banner_text  {
+    font-size: large;
+    padding: 14px 16px;
+    border-radius: 4px;
+
+}
+
+
+/* Navbar ---------------------------------------- */
+.navbar {
+  display: inline-block ;
+  width: 64%;
+}
+
+/* Content ---------------------------------------- */
+.content_wrap {
+  margin: 10px;
+}
+
+/* Bento grid? https://www.makeitgrid.com/ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 8px;
+}
+
+.item-0 {
+  grid-column: 1 / span 2;
+  grid-row: 1 ;
+}
+.item-1 {
+  grid-column: 3;
+  grid-row: 1 ;
+}
+
+.item-0alt {
+  grid-column: 2 / span 3;
+  grid-row: 1 ;
+}
+.item-1alt {
+  grid-column: 1;
+  grid-row: 1 ;
+}
+
+/* post listing styles */
+.post {
+  align-content: center;
+  background-color: #696969;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px;
+  color: white;
+}
+
+.post h1 {
+  font-size: large;
+  font-style: oblique;
+}
+
+.post .read-more {
+  color: cyan;
+  text-decoration-color: white;
+}
+
+.post .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post .imgfit {
+  width: 250px;
+  height:250px;
+  object-fit: cover;
+  margin: 4px;
+}
+
+
+
+/* Media response  ---------------------------------------- */
+.mobile-only {
+  display: none;
+}
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 10in) {
+    .mobile-only {
+      display: block;
+    }
+    .desktop-only {
+      display: none;
+    }
+    html {
+        font-size: small;
+    }
+
+    header {
+      width: 97%;
+    }
+
+    header .banner_text  {
+      font-size: medium;
+    }
+    .navbar {
+      padding: 5px;
+      width: 95%;
+    }
+    .content_wrap {
+      padding: 5px;
+    }
+    footer {
+      font-size: smaller ;
+    }
+
+    /* for handling bento box display */
+
+    .grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .post .center {
+      display: flex;
+      justify-content: none;
+      align-items: none;
+    }
+    .post .img {
+      display: flex;
+    }
+
+    .post .imgfit {
+      width: 150px;
+      height:150px;
+      object-fit: cover;
+      margin: 4px;
+    }
+
+    
+    
+}
+
