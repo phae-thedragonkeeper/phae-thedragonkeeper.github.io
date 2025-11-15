@@ -1,1 +1,3 @@
-# phae-thedragonkeeper.github.io
+# phae-thedragonkeeper
+
+personal home page and blog
