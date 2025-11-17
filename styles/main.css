@@ -306,6 +306,7 @@ footer p {
     }
     .navbar {
       padding: 5px;
+      width: 95%;
     }
     .content_wrap {
       padding: 5px;
