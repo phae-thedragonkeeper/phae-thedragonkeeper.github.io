@@ -1,28 +1,55 @@
 /* Header ---------------------------------------- */
-header {
-    padding: 0px;
-    height: auto;
-    display: inline-flex;
-    border-radius: 10px;
-    margin: 10px;
-    float: left;
-    width: 33%;
-
-}
 
 header .banner_text  {
-    font-size: large;
-    padding: 14px 16px;
-    border-radius: 4px;
+    font-size: medium;
 
 }
 
 
 /* Navbar ---------------------------------------- */
 .navbar {
-  display: inline-block ;
-  width: 64%;
+  /* display: inline-block ; */
+  /* width: 64%; */
+  display: flex;
+  align-items: center;
 }
+
+
+/* custom grid for navbar + header */
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  margin: 5px;
+  grid-auto-rows: min-content;
+  
+}
+
+.header-grid header  {
+  grid-column: 1 ;
+  grid-row: 1 / span 2;
+  border-radius: 10px;
+  float: center;
+  padding: 0px;
+  margin: 4px;
+  display: flex;
+
+}
+
+.header-grid .navbar {
+  grid-column: 2 / span 2 ;
+  grid-row: 1 ;
+  padding: 0px;
+}
+
+
+.header-grid .description {
+  grid-column: 2 / span 2 ;
+  grid-row: 2 ;
+  padding: 10px;
+}
+
 
 /* Content ---------------------------------------- */
 .content_wrap {
@@ -98,7 +125,7 @@ header .banner_text  {
   display: block;
 }
 
-@media (max-width: 10in) {
+@media (max-width: 12in) {
     .mobile-only {
       display: block;
     }
@@ -109,17 +136,12 @@ header .banner_text  {
         font-size: small;
     }
 
-    header {
-      width: 97%;
-    }
+
 
     header .banner_text  {
-      font-size: medium;
+      font-size: small;
     }
-    .navbar {
-      padding: 5px;
-      width: 95%;
-    }
+
     .content_wrap {
       padding: 5px;
     }
@@ -154,3 +176,20 @@ header .banner_text  {
     
 }
 
+@media (max-width: 8in) {
+    .header-grid {
+      display: block;
+  }
+  header {
+    width: 97%;
+  }
+  .navbar {
+    padding: 5px;
+    width: 95%;
+  }
+
+  .description {
+    padding: 5px;
+    width: 90%;
+  }
+}
