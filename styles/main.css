@@ -321,6 +321,8 @@ footer p {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(6, 1fr);
       gap: 8px;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
 
     .item {
