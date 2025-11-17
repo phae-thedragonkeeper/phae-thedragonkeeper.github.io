@@ -323,6 +323,15 @@ footer p {
       gap: 8px;
     }
 
+    .item {
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px;
+      /* font-size: 150%; */
+      text-decoration: none;
+    }
+
     
     
 }
