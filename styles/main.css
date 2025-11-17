@@ -199,6 +199,7 @@ input:checked~ label i.arrow {
 /* Content ---------------------------------------- */
 .content_wrap {
   margin: 10px;
+  max-width: 95%;
 }
 
 /* Bento grid? https://www.makeitgrid.com/ */
@@ -207,6 +208,7 @@ input:checked~ label i.arrow {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 8px;
+  margin: 10px;
 }
 .item {
   background-color: #444;
