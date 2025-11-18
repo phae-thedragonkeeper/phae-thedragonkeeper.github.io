@@ -137,7 +137,6 @@ header .banner_text  {
     }
 
 
-
     header .banner_text  {
       font-size: small;
     }
@@ -166,8 +165,8 @@ header .banner_text  {
     }
 
     .post .imgfit {
-      width: 150px;
-      height:150px;
+      width: 80%;
+      height:80%;
       object-fit: cover;
       margin: 4px;
     }
@@ -177,13 +176,19 @@ header .banner_text  {
 }
 
 @media (max-width: 8in) {
-    .header-grid {
-      display: block;
+  .header-grid {
+    display: block;
+    margin: 0px;
   }
-  header {
-    width: 97%;
+
+  .header-grid header {
+    padding: 10px;
+    height: 75px;
+    border-radius: 10px;
+    margin: 9px;
   }
-  .navbar {
+
+  .header-grid .navbar {
     padding: 5px;
     width: 95%;
   }
@@ -191,5 +196,29 @@ header .banner_text  {
   .description {
     padding: 5px;
     width: 90%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .item-0 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  .item-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2 ;
+  }
+
+  .item-0alt {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .item-1alt {
+    grid-column: 2;
+    grid-row: 1 / span 2 ;
   }
 }

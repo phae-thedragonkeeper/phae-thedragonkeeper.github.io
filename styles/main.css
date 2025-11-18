@@ -33,7 +33,7 @@ header {
 header .banner_text  {
     display:inline-block;
     font-family: 'Courier';
-    font-size: xx-large;
+    font-size: medium;
 
 }
 
@@ -298,10 +298,13 @@ footer p {
     }
     header {
       padding: 10px;
-      height: 120px;
+      height: 75px;
+      border-radius: 10px;
+      margin: 9px;
     }
+
     header .banner_text  {
-      font-size: large;
+      font-size: small;
     
     }
     .navbar {
