@@ -337,8 +337,13 @@ footer p {
       /* font-size: 150%; */
       text-decoration: none;
     }
+    
+}
+@media (max-width: 6in) {
 
-    
-    
+  header .banner_text  {
+    font-size: smaller;
+  
+  }
 }
 
