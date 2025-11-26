@@ -5,6 +5,12 @@
   display: block;
 }
 
+.gallery-pair {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
 /* Bento grid? https://www.makeitgrid.com/ */
 .grid {
   display: grid;
@@ -22,8 +28,17 @@
 }
 
 /* post listing styles */
-
-
-
+.img-gal {
+  width:  95%;
+  height: 95%;
+  object-fit: cover;
+  margin: 4px;
+  border-radius: 4px;
+}
 
 /* Media response  ---------------------------------------- */
+@media (max-width: 8in) {
+  .gallery-pair {
+    display: block;
+  }
+}
