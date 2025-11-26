@@ -222,3 +222,11 @@ header .banner_text  {
     grid-row: 1 / span 2 ;
   }
 }
+
+@media (max-width: 6in) {
+
+  header .banner_text  {
+    font-size: smaller;
+  
+  }
+}
